@@ -9,7 +9,7 @@ import MenuCell from "@/components/MenuCell.vue";
     <MenuCell url="/">
       CSS
       <template v-slot:secondary>
-        <div style="margin: 0 1rem 0 1rem;">hwllo</div>
+        <div>hello</div>
       </template>
     </MenuCell>
     <MenuCell url="/">JavaScript</MenuCell>
