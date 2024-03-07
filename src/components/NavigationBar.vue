@@ -9,7 +9,7 @@ import MenuCell from "@/components/MenuCell.vue";
     <MenuCell url="/">
       CSS
       <template v-slot:secondary>
-        <div>hello</div>
+        <div style="width: 11rem;">hello</div>
       </template>
     </MenuCell>
     <MenuCell url="/">JavaScript</MenuCell>
@@ -18,7 +18,7 @@ import MenuCell from "@/components/MenuCell.vue";
 
 <style scoped>
 .navbar {
-  height: 5em;
+  height: 3.6em;
   background: darkseagreen;
   display: flex;
   flex-direction: row;
