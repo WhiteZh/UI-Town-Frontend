@@ -1,8 +1,23 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #545454;
 }
 
 .no-link-style {
     text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Zhi Mang Xing';
+    src: url("@/assets/ZhiMangXing-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooljazz';
+    src: url("@/assets/Cooljazz.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
