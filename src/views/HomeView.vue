@@ -1,25 +1,33 @@
 <script setup>
-import NavigationBar from "@/components/NavigationBar.vue";
-import DropDown from "@/components/DropDown.vue";
+  import {ref} from "vue";
+  import { RouterLink } from "vue-router";
+  import NavigationBar from "@/components/NavigationBar.vue";
+  import DropDown from "@/components/DropDown.vue";
+
+  let CSS_attribute = ref([
+    {name: 'Buttons', url: '/'},
+    {name: 'Checkboxes', url: '/'},
+    {name: 'Toggle Switches', url: '/'},
+    {name: 'Loads', url: '/'},
+    {name: 'Loads', url: '/'},
+    {name: 'Transitions', url:'/'},
+    {name: 'Special Effects', url: '/'}
+  ]);
+  let JS_attribute = ref([
+    {name: 'Mouse Effect', url: '/'},
+    {name: 'Background', url: '/'},
+    {name: 'Menu', url: '/'},
+    {name: 'Visible Chart', url: '/'}
+  ]);
 </script>
 
 <template>
     <NavigationBar/>
     <main>
         <div style="height: 5rem;"></div>
-        <DropDown><template v-slot:title>ALL</template></DropDown>
-        <DropDown>
-          <template v-slot:title>CSS</template>
-          <template v-slot:menu>
-            <p>hi</p>
-          </template>
-        </DropDown>
-        <DropDown>
-          <template v-slot:title>JavaScript</template>
-          <template v-slot:menu>
-            <p>hi</p>
-          </template>
-        </DropDown>
+        <DropDown>ALL</DropDown>
+        <DropDown :list="CSS_attribute">CSS</DropDown>
+        <DropDown :list="JS_attribute">JavaScript</DropDown>
     </main>
 </template>
 
@@ -30,9 +38,7 @@ main {
   width: 30vw;
   display: flex;
   flex-direction: column;
-  padding-left: 2rem;
+  margin-left: 2rem;
 }
-
-
 
 </style>
