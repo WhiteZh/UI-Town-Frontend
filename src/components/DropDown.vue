@@ -1,13 +1,23 @@
 <script setup>
+  import {RouterLink} from "vue-router";
 
+  defineProps({
+      list: Array,
+  });
 </script>
 
 <template>
   <div class="drop-down-container">
     <div class="drop-down-btn">
-      <slot name="title"/>
+      <slot/>
     </div>
-    <div class="drop-down-menu"><slot name="menu"/></div>
+    <div class="drop-down-menu" v-if="list">
+      <ul>
+        <li v-for="{name, url} in list">
+          <RouterLink class="no-link-style" :to="url">{{name}}</RouterLink>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -42,5 +52,19 @@
   max-width: 10rem;
   color: white;
   display: none;
+  background-color: #272030;
+  min-width: 14rem;
+  border-radius: 2rem;
+  margin: 0 0.5rem;
 }
+
+.drop-down-menu li {
+  margin: 0.5rem 0;
+}
+
+.drop-down-menu li * {
+  color: white;
+  font-size: 1.2rem;
+}
+
 </style>
