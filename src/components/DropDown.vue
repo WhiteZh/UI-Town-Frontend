@@ -59,7 +59,7 @@
   background-color: #272030;
   border-radius: 2rem;
   margin: 0;
-  padding: 0.1rem 2.5rem;
+  padding: 0.1rem 0.5rem 0.1rem 2.5rem;
 }
 
 .drop-down-menu li {

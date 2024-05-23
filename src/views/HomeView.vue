@@ -21,23 +21,28 @@
 
 <template>
     <NavigationBar/>
-    <main>
-        <div style="height: 15rem;"></div>
+    <aside>
+        <div style="height: 10rem;"></div>
         <DropDown>All</DropDown>
         <DropDown :list="CSS_attribute">CSS</DropDown>
         <DropDown :list="JS_attribute">JavaScript</DropDown>
-    </main>
+    </aside>
 </template>
 
 <style scoped>
-main {
+aside {
   height: 100%;
-  max-width: 20em;
-  width: 30vw;
+  width: 24rem;
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
   align-items: start;
+}
+
+@media (max-width: 100rem) {
+  aside {
+    display: none;
+  }
 }
 
 </style>
