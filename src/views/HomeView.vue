@@ -32,7 +32,7 @@
 
 <style scoped>
 main {
-  height: 100vh;
+  height: 100%;
   max-width: 20em;
   width: 30vw;
   display: flex;
