@@ -8,7 +8,6 @@
     {name: 'Checkboxes', url: '/'},
     {name: 'Toggle Switches', url: '/'},
     {name: 'Loads', url: '/'},
-    {name: 'Loads', url: '/'},
     {name: 'Transitions', url:'/'},
     {name: 'Special Effects', url: '/'}
   ]);
@@ -23,8 +22,8 @@
 <template>
     <NavigationBar/>
     <main>
-        <div style="height: 12rem;"></div>
-        <DropDown>ALL</DropDown>
+        <div style="height: 15rem;"></div>
+        <DropDown>All</DropDown>
         <DropDown :list="CSS_attribute">CSS</DropDown>
         <DropDown :list="JS_attribute">JavaScript</DropDown>
     </main>

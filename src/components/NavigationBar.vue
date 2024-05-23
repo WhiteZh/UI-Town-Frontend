@@ -15,7 +15,7 @@
 
 <style scoped>
 .navbar {
-  padding: 0.5rem 1rem 0 1rem;
+  padding: 1rem 1rem 0 1rem;
   height: 3.6em;
   display: flex;
   flex-direction: row;
@@ -25,7 +25,7 @@
 .home-title {
   font-size: 3.5rem;
   color: white;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
   font-family: "Zhi Mang Xing",serif;
   align-self: center;
 }
@@ -40,7 +40,7 @@
   font-family: "Cooljazz",serif;
   font-style: italic;
   padding-bottom: 0.6rem;
-  margin-right:0.6rem;
+  margin-right: 1.8rem;
 }
 .navbar-element:hover {
   color: whitesmoke;
