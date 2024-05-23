@@ -27,20 +27,20 @@
 }
 
 .drop-down-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   margin: 0;
-  width: 8rem;
+  width: 7.5rem;
   display: inline-block;
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: bold;
   color: white;
   text-align: left;
+  border-radius: 2rem;
 }
 
-.drop-down-btn:hover {
+.drop-down-container:hover .drop-down-btn {
   background-color: #272030;
-  border-radius: 2rem
 }
 
 .drop-down-container:hover .drop-down-menu {
@@ -49,17 +49,27 @@
 
 .drop-down-menu {
   position: absolute;
-  max-width: 10rem;
-  color: white;
   display: none;
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
+.drop-down-menu ul {
+  width: 10rem;
   background-color: #272030;
-  min-width: 14rem;
   border-radius: 2rem;
-  margin: 0 0.5rem;
+  margin: 0;
+  padding: 0.1rem 0.5rem 0.1rem 2.5rem;
 }
 
 .drop-down-menu li {
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
+  color: white;
+  text-indent: 0.5rem;
+}
+
+.drop-down-menu li:hover {
+  text-decoration-line: underline;
 }
 
 .drop-down-menu li * {
