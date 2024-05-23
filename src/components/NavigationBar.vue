@@ -23,7 +23,7 @@
 }
 
 .home-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: white;
   margin-right: 1.5rem;
   font-family: "Zhi Mang Xing",serif;

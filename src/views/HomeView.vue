@@ -23,7 +23,7 @@
 <template>
     <NavigationBar/>
     <main>
-        <div style="height: 5rem;"></div>
+        <div style="height: 12rem;"></div>
         <DropDown>ALL</DropDown>
         <DropDown :list="CSS_attribute">CSS</DropDown>
         <DropDown :list="JS_attribute">JavaScript</DropDown>

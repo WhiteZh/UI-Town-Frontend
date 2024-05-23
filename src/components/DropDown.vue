@@ -27,9 +27,9 @@
 }
 
 .drop-down-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   margin: 0;
-  width: 8rem;
+  width: 7.3rem;
   display: inline-block;
   cursor: pointer;
   font-size: 1.4rem;
