@@ -4,7 +4,8 @@
 <template>
   <nav class="navbar">
     <a class="home-title no-link-style" href="/">UITOWN</a>
-    <a href="#" class="no-link-style navbar-element">Element</a>
+    <a href="#" class="no-link-style navbar-element">Information</a>
+    <a href="#" class="no-link-style navbar-element">Recommendation</a>
     <span style="flex-grow: 1"></span>
     <a href="#" class="no-link-style navbar-option" style="background-color: #1ac8db">Join in the Town</a>
     <a href="#" class="no-link-style navbar-option" style="background-color: #99dfec">Create</a>
@@ -24,7 +25,7 @@
 .home-title {
   font-size: 3rem;
   color: white;
-  margin-right: 2.5rem;
+  margin-right: 1.5rem;
   font-family: "Zhi Mang Xing",serif;
   align-self: center;
 }
@@ -35,10 +36,11 @@
 .navbar-element {
   align-self: flex-end;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Cooljazz",serif;
   font-style: italic;
   padding-bottom: 0.6rem;
+  margin-right:0.6rem;
 }
 .navbar-element:hover {
   color: whitesmoke;
