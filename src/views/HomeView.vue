@@ -1,6 +1,5 @@
 <script setup>
   import {ref} from "vue";
-  import { RouterLink } from "vue-router";
   import NavigationBar from "@/components/NavigationBar.vue";
   import DropDown from "@/components/DropDown.vue";
 
