@@ -38,6 +38,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
+  align-items: start;
 }
 
 </style>
