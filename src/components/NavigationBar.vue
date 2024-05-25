@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <div id="navbar">
-    <a id="home-title" class="no-link-style" href="/">UITOWN</a>
+  <div class="navbar">
+    <a class="home-title no-link-style" href="/">UITOWN</a>
     <a href="#" class="no-link-style navbar-element">Information</a>
     <a href="#" class="no-link-style navbar-element">Recommendation</a>
     <span style="flex-grow: 1"></span>
@@ -14,7 +14,7 @@
 </template>
 
 <style scoped>
-#navbar {
+.navbar {
   padding: 1rem 1rem 0 1rem;
   height: 3.6rem;
   display: flex;
@@ -22,14 +22,14 @@
   justify-content: space-between;
 }
 
-#home-title {
+.home-title {
   font-size: 3.5rem;
   color: white;
   margin-right: 2rem;
   font-family: "Zhi Mang Xing",serif;
   align-self: center;
 }
-#home-title:hover {
+.home-title:hover {
   color: whitesmoke;
 }
 

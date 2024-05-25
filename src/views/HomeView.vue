@@ -21,14 +21,14 @@
 
 <template>
   <NavigationBar/>
-  <div id="container">
-    <div id="left-nav">
+  <div class="main">
+    <div class="left-nav">
         <div style="height: 10rem;"></div>
         <DropDown>All</DropDown>
         <DropDown :list="CSS_attribute">CSS</DropDown>
         <DropDown :list="JS_attribute">JavaScript</DropDown>
     </div>
-    <div id="content">
+    <div class="content">
       <h3>To Select</h3>
       <h6>Choose the code of your choice</h6>
     </div>
@@ -37,23 +37,23 @@
 </template>
 
 <style scoped>
-#container {
+.main {
   display: flex;
   flex-direction: row;
-  height: calc(100vh - 3.6rem);
-}
-
-#content {
   flex-grow: 1;
 }
 
-#content>h3 {
+.content {
+  flex-grow: 1;
+}
+
+.content>h3 {
   font-size: 1.75rem;
   color: #D0C3F1;
   text-indent: 2rem;
 }
 
-#content>h6 {
+.content>h6 {
   color: #D0C3F1;
   letter-spacing: 0.2rem;
   font-family: Cooljazz, sans-serif;
@@ -62,7 +62,7 @@
   text-indent: 2rem;
 }
 
-#left-nav {
+.left-nav {
   width: 20rem;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,11 @@
   align-items: start;
 }
 
-
+@media (max-width: 61rem) {
+  .left-nav {
+    display: none;
+  }
+}
 
 
 </style>
