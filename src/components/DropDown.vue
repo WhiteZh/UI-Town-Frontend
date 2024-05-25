@@ -27,12 +27,12 @@
 }
 
 .drop-down-btn {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   margin: 0;
-  width: 7.5rem;
+  width: 5.3rem;
   display: inline-block;
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: bold;
   color: white;
   text-align: left;
@@ -55,9 +55,9 @@
 }
 
 .drop-down-menu ul {
-  width: 10rem;
+  width: 8rem;
   background-color: #272030;
-  border-radius: 2rem;
+  border-radius: 1.1rem;
   margin: 0;
   padding: 0.1rem 0.5rem 0.1rem 2.5rem;
 }
@@ -74,7 +74,7 @@
 
 .drop-down-menu li * {
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 </style>
