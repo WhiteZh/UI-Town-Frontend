@@ -16,30 +16,28 @@
 <style scoped>
 .navbar {
   padding: 1rem 1rem 0 1rem;
-  height: 3.6rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .home-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: white;
   margin-right: 2rem;
   font-family: "Zhi Mang Xing",serif;
-  align-self: center;
 }
 .home-title:hover {
   color: whitesmoke;
 }
 
 .navbar-element {
-  align-self: flex-end;
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "Cooljazz",serif;
   font-style: italic;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
   margin-right: 1.8rem;
 }
 .navbar-element:hover {
@@ -47,9 +45,10 @@
 }
 
 .navbar-option {
+  font-size: 0.8rem;
   align-self: center;
   margin: 0 0.5rem 0 0.5rem;
-  padding: 0.5rem 1.0rem 0.5rem 1.0rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 1rem;
   color: black;
   font-weight: bold;

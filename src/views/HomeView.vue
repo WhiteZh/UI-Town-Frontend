@@ -2,6 +2,7 @@
   import {ref} from "vue";
   import NavigationBar from "@/components/NavigationBar.vue";
   import DropDown from "@/components/DropDown.vue";
+  import DisplayContent from "@/components/DisplayContent.vue";
 
   let CSS_attribute = ref([
     {name: 'Buttons', url: '/'},
@@ -21,17 +22,17 @@
 
 <template>
   <NavigationBar/>
+  <div class="header">
+    <h3>To Select</h3>
+    <h6>Choose the code of your choice</h6>
+  </div>
   <div class="main">
     <div class="left-nav">
-        <div style="height: 10rem;"></div>
         <DropDown>All</DropDown>
         <DropDown :list="CSS_attribute">CSS</DropDown>
         <DropDown :list="JS_attribute">JavaScript</DropDown>
     </div>
-    <div class="content">
-      <h3>To Select</h3>
-      <h6>Choose the code of your choice</h6>
-    </div>
+    <DisplayContent/>
   </div>
 
 </template>
@@ -43,23 +44,25 @@
   flex-grow: 1;
 }
 
-.content {
-  flex-grow: 1;
+.header {
+  padding: 0 14.6rem;
 }
 
-.content>h3 {
-  font-size: 1.75rem;
+.header>h3 {
+  font-size: 1.5rem;
   color: #D0C3F1;
-  text-indent: 2rem;
+  margin: 1.5rem 0 1rem 0;
 }
 
-.content>h6 {
+.header>h6 {
   color: #D0C3F1;
   letter-spacing: 0.2rem;
   font-family: Cooljazz, sans-serif;
   font-weight: lighter;
   font-style: italic;
   text-indent: 2rem;
+  margin: 1rem 0;
+  font-size: 0.5rem;
 }
 
 .left-nav {
@@ -68,12 +71,6 @@
   flex-direction: column;
   margin-left: 1rem;
   align-items: start;
-}
-
-@media (max-width: 61rem) {
-  .left-nav {
-    display: none;
-  }
 }
 
 
