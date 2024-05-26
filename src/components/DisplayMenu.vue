@@ -1,12 +1,31 @@
 <script setup>
-  import {ref} from "vue";
+import {onMounted, ref} from "vue";
+  import DisplayCard from "@/components/DisplayCard.vue";
 
   defineProps({
     category: String,
     contentType: String,
   });
 
-  let list = ref(Array(15).fill({name: 'hi'}));
+  let list = ref([]);
+
+  onMounted(() => {
+    fetch(`http://localhost:3000/css?${Array(12).fill(null).map((e, i) => `id=${i}`).join('&')}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(res => {
+      if (res.ok) {
+        res.json().then(val => {
+          list.value = val;
+          console.log(val);
+        });
+      } else {
+        res.json().then(err => console.error(err.message));
+      }
+    });
+  });
 </script>
 
 <template>
@@ -22,7 +41,7 @@
       <span class="sort"><span style="font-size: 0.5rem">Sort : </span>Randomized</span>
     </div>
     <div class="main">
-      <div v-for="{name} in list" style="height: 5rem; width: 10rem; background-color: white">{{name}}</div>
+      <DisplayCard v-for="{name} in list" :name="name"/>
     </div>
     <div class="footer">
 
@@ -45,6 +64,7 @@
   font-style: italic;
   color: white;
   height: 1.7rem;
+  padding-bottom: 0.5rem;
 }
 
 .sort {
@@ -91,11 +111,11 @@
 
 .main {
   flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 18rem);
+  grid-template-rows: repeat(auto-fill, 15rem);
   justify-content: space-between;
-  align-content: space-between;
+  grid-gap: 1rem;
 }
 
 </style>

@@ -2,7 +2,7 @@
   import {ref} from "vue";
   import NavigationBar from "@/components/NavigationBar.vue";
   import DropDown from "@/components/DropDown.vue";
-  import DisplayContent from "@/components/DisplayContent.vue";
+  import DisplayMenu from "@/components/DisplayMenu.vue";
 
   let CSS_attribute = ref([
     {name: 'Buttons', url: '/'},
@@ -32,7 +32,7 @@
         <DropDown :list="CSS_attribute">CSS</DropDown>
         <DropDown :list="JS_attribute">JavaScript</DropDown>
     </div>
-    <DisplayContent/>
+    <DisplayMenu/>
   </div>
 
 </template>
@@ -66,7 +66,7 @@
 }
 
 .left-nav {
-  width: 20rem;
+  min-width: 20rem;
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
