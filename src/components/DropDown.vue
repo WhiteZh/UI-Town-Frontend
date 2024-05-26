@@ -14,7 +14,7 @@
     <div class="drop-down-menu" v-if="list">
       <ul>
         <li v-for="{name, url} in list">
-          <RouterLink class="no-link-style" :to="url">{{name}}</RouterLink>
+          <RouterLink class="no-link-style" :to="url" :key="name">{{name}}</RouterLink>
         </li>
       </ul>
     </div>
